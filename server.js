@@ -37,6 +37,14 @@ app.get('/clothes', (req, res) => {
     res.sendFile(path.join(staticPath, "clothes.html"));
 })
 
+app.get('/clothes', (req, res) => {
+    res.sendFile(path.join(staticPath, "clothes.html"));
+})
+
+app.get('/product', (req, res) => {
+    res.sendFile(path.join(staticPath, "product.html"));
+})
+
 app.post('/signup', (req, res) => {
     let { username, email, password, tac} = req.body;
 
