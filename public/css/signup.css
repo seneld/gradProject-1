@@ -36,7 +36,7 @@ input[type="email"]{
     height: 40px;
     padding: 20px;
     border-radius: 5px;
-    background: #fff;
+    background: rgb(232, 232, 232);
     border: none;
     outline: none;
     margin: 20px 0;

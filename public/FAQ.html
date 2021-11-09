@@ -9,53 +9,87 @@
 </head>
 
 <body>
-    <img src="img/loading.gif" class="loader" alt="">
+    <nav class="navbar"></nav>
+    <header class="hero-section"></header>
+    <card class="card"></card>
+    
 
-    <div>
+    <div class="nav">
         <img src="img/logo.png" class="logo" alt="">
-        <p class="font_8">Here we hope to answer any questions you may have about our products.</p>
     </div>
+
+    <ul class="links-container">
+        <li class="link-item"><a href="#" class="link">Clothes & Collars</a></li>
+        <li class="link-item"><a href="#" class="link">Toys</a></li>
+        <li class="link-item"><a href="#" class="link">Feeding Supplies</a></li>
+        <li class="link-item"><a href="#" class="link">Beds, Mats & Houses</a></li>
+        <li class="link-item"><a href="#" class="link selected">FAQ</a></li>
+
+        <div class="nav-items">
+            <a>
+                <img src="img/home_button_2.png" id= "home-img" alt="">
+            </a>
+            <a href="#"><img src="img/shopping.png" alt=""></a>
+
+            <a>
+                <img src="img/user.png" id="user-img" alt="">
+                <div class = "login-logout-popup hide" > 
+                        <p class = "account-info">Log in as, name</p>
+                        <button class ="btn" id="user-btn">Log out</button>
+                </div>
+            </a>
+        </div>    
+    </ul>
 
     <section>
         <div class="container">
             <div class="accordion">
                 <div class="accordion-item" id="question1">
-                    <a href="#question1">
-                        How to measure neck size?
+                    <a class="accordion-link" href="#question1">
+                        How to measure neck size ?
                     </a>
                     <div class="answer">
-                        Loop a measuring tape around the middle of your dog's neck making sure it is a bit TIGHT, fitted with no room and not easy to turn.
+                        <p>
+                            Loop a measuring tape around the middle of your dog's neck making sure it is a bit TIGHT, fitted with no room and not easy to turn.
 Check our measurment instruction video bottom of this page.
 *If you do not have a tape measure, you can use a piece of string and then measure the string with a rigid ruler. All sizes in cm.
+                        </p>
                     </div>
                 </div>
-                <div class="accordion-item" id="question1">
-                    <a href="#question1">
-                        Will my collar stretch ?
+                <div class="accordion-item" id="question2">
+                    <a class="accordion-link" href="#question2">
+                        Will my collar stretch ?                        
                     </a>
                     <div class="answer">
-                        After time leather will naturally soften and may stretch slightly but this will not impact on the functionality of the item.
+                        <p>
+                            After time leather will naturally soften and may stretch slightly but this will not impact on the functionality of the item.
+                        </p>
                     </div>
                 </div>
-                <div class="accordion-item" id="question1">
-                    <a href="#question1">
-                        Are your collars waterproof?
+                <div class="accordion-item" id="question3">
+                    <a class="accordion-link" href="#question3">
+                        Are your collars waterproof ?
                     </a>
                     <div class="answer">
-                        No. We finish off our leather products with a protecting leather balm which provides some temporary water resistance.
+                        <p>
+                            No. We finish off our leather products with a protecting leather balm which provides some temporary water resistance.
+                        </p>
                     </div>
                 </div>
-                <div class="accordion-item" id="question1">
-                    <a href="#question1">
-                        What are your products made from?
+                <div class="accordion-item" id="question4">
+                    <a class="accordion-link" href="#question4">
+                        What are your products made from ?
                     </a>
                     <div class="answer">
-                        We use natural Turkish cow leather from a supplier who guarantee certification of traceability of origin.
+                        <p>
+                            We use natural Turkish cow leather from a supplier who guarantee certification of traceability of origin.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
+        </section>
+    <script src="css/FAQ.css"></script>
+    <script src="js/navigation.js"></script>
 </body>
 </html>

@@ -6,6 +6,8 @@ const actionBtn = document.querySelector('#user-btn');
 
 const logoBtn = document.querySelector('.logo');
 const homeImageButton = document.querySelector('#home-img');
+const clothesAndCollarsBtn = document.querySelector('#clothes');
+const faqBtn = document.querySelector('#FAQ');
 
 userImageButton.addEventListener('click', ()=>{
     userPopup.classList.toggle('hide');
@@ -38,5 +40,13 @@ window.onload = () =>{
 
     logoBtn.addEventListener('click', () =>{
         location.href = '/';
+    })
+
+    clothesAndCollarsBtn.addEventListener('click', () =>{
+        location.href = '/clothes.html';
+    })
+
+    faqBtn.addEventListener('click', () =>{
+        location.href = '/FAQ.html';
     })
 }

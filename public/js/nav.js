@@ -15,7 +15,7 @@ const createNav = () => {
             <li class="link-item"><a href="#" class="link">Toys</a></li>
             <li class="link-item"><a href="#" class="link">Feeding Supplies</a></li>
             <li class="link-item"><a href="#" class="link">Beds, Mats & Houses</a></li>
-            <li class="link-item"><a href="#" class="link">FAQ</a></li>
+            <li class="link-item"><a href="#" class="link" id="FAQ">FAQ</a></li>
 
             <div class="nav-items">
                 <a>
@@ -47,8 +47,8 @@ const popuptext = document.querySelector('.account-info');
 const actionBtn = document.querySelector('#user-btn');
 
 const homeImageButton = document.querySelector('#home-img');
-
 const clothesAndCollarsBtn = document.querySelector('#clothes');
+const faqBtn = document.querySelector('#FAQ');
 
 userImageButton.addEventListener('click', ()=>{
     userPopup.classList.toggle('hide');
@@ -81,5 +81,9 @@ window.onload = () =>{
 
     clothesAndCollarsBtn.addEventListener('click', () =>{
         location.href = '/clothes.html';
+    })
+
+    faqBtn.addEventListener('click', () =>{
+        location.href = '/FAQ.html';
     })
 }
