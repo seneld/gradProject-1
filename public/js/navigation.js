@@ -91,6 +91,11 @@ window.onload = () =>{
     card-btn.addEventListener('click', () =>{
         location.href = '/product.html';
     })
+
+    buy-btn.addEventListener('click', () =>{
+        location.href = '/login';
+    })
+    
 }
 
 function selectedFnc(){
