@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'roboto', sans-serif;
-    background-color: #e0e0e0;
 }
 
 .navbar{
@@ -23,6 +22,7 @@
     padding-left: 5vw;
     display: flex;
     justify-content: space-between;
+    background-color: #e0e0e0;
 }
 .nav{
     padding-top: 75px;
@@ -168,8 +168,6 @@
 
 }
 
-
-
 /* anasayfadaki containerların başı */
 .collection-container{
     padding-top: 3vw;
@@ -177,6 +175,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    background-color: #e0e0e0;
 }
 
 .collection{
@@ -198,6 +197,8 @@
     color: #fff;
     font-size: 50px;
     text-transform: capitalize;
+    text-shadow: 3px 2px 1px #383838;
+    z-index: 3;
 }
 
 .collection:nth-child(3){

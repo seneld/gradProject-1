@@ -12,7 +12,11 @@ section{
     align-items: center;
     justify-content: center;
 }
-
+.intro{
+    padding-top: 7vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #383838;
+}
 .container{
     width: 100%;
     max-width: 80rem;
@@ -85,4 +89,10 @@ section{
 
 .accordion-item:target .accordion-link .ion-md-remove{
     display: block;
+}
+
+.neck-size{
+    padding-left: 22vw;
+    padding-top: 0;
+    padding-bottom: 10vw;
 }

@@ -6,7 +6,7 @@ const createNav = () => {
         <ul class="links-container">
             <li class="link-item"><a href="#" class="link" id="clothes">Clothes & Collars</a></li>
             <li class="link-item"><a href="#" class="link" id="toys">Toys</a></li>
-            <li class="link-it""em"><a href="#" class="link">Feeding Supplies</a></li>
+            <li class="link-item"><a href="#" class="link">Feeding Supplies</a></li>
             <li class="link-item"><a href="#" class="link">Beds, Mats & Houses</a></li>
             <li class="link-item"><a href="#" class="link" id="FAQ">FAQ</a></li>
 
@@ -77,7 +77,6 @@ window.onload = () =>{
 
     clothesAndCollarsBtn.addEventListener('click', () =>{
         location.href = '/clothes.html';
-        selectedFnc();
     })
 
     toysBtn.addEventListener('click', () =>{
@@ -96,8 +95,4 @@ window.onload = () =>{
         location.href = '/login';
     })
     
-}
-
-function selectedFnc(){
-    clothesAndCollarsBtn.innerHTML='<li class="link-item"><a href="#" class="link selected" id="clothes">Clothes & Collars</a></li>';
 }
