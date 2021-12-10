@@ -45,8 +45,8 @@ const toysBtn = document.querySelector('#toys');
 const faqBtn = document.querySelector('#FAQ');
 
 
-const newSeasonBtn = document.querySelector('#newSeason');
-const bestSellerBtn = document.querySelector('#bestSeller');
+// const newSeasonBtn = document.querySelector('#newSeason');
+// const bestSellerBtn = document.querySelector('#bestSeller');
 
 
 
@@ -109,8 +109,8 @@ window.onload = () =>{
 
 
 
-    newSeasonBtn.addEventListener('click', () =>{
-        location.href = '/newSeason.html';
-    })
+    // newSeasonBtn.addEventListener('click', () =>{
+    //     location.href = '/newSeason.html';
+    // })
     
 }
