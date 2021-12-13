@@ -5,10 +5,14 @@ window.onload = () => {
             location.replace('/');
         }
     }
+
+    logoBtn.addEventListener('click', () =>{
+        location.href = '/';
+    })
 }
 
 const loader = document.querySelector('.loader');
-
+const logoBtn = document.querySelector('.logo');
 const submitBtn = document.querySelector('.submit-btn');
 const username = document.querySelector('#username') || null;
 const email = document.querySelector('#email');

@@ -35,12 +35,13 @@ const userImageButton = document.querySelector('#user-img');
 const userPopup = document.querySelector('.login-logout-popup');
 const popuptext = document.querySelector('.account-info');
 const actionBtn = document.querySelector('#user-btn');
-
 const logoBtn = document.querySelector('.logo');
 const homeImageButton = document.querySelector('#home-img');
 const clothesAndCollarsBtn = document.querySelector('#clothes');
 const toysBtn = document.querySelector('#toys');
 const faqBtn = document.querySelector('#FAQ');
+const newSeasonBtn = document.querySelector('#newSeason');
+const bestSellerBtn = document.querySelector('#bestSeller');
 
 userImageButton.addEventListener('click', ()=>{
     userPopup.classList.toggle('hide');
@@ -94,5 +95,29 @@ window.onload = () =>{
     buy-btn.addEventListener('click', () =>{
         location.href = '/login';
     })
+
+    newSeasonBtn.addEventListener('click', () =>{
+        location.href = '/newSeason.html';
+    })
+
+    bestSellerBtn.addEventListener('click', () =>{
+        location.href = '/bestSeller.html';
+    })
     
 }
+
+const createFooter = () => {
+    let footer = document.querySelector('footer');
+
+    footer.innerHTML = `
+          
+        <footer>
+        <div class="footer-content">
+            <img src="img/logo_1.png" class="logo" alt="">
+            <p class="info">About us: This website was built by Ceren Gülsem and Şenel Develioglu within the scope of MCBU Computer Engineering department Graduation Project-1.</p>
+        </div>
+    </footer>
+    `;
+} 
+
+createFooter();

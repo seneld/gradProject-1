@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e0e0ee;
+    background-color: #e0e0e0;
 }
 
 .loader{

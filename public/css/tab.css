@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #e0e0e0;
+
 }
 
 .navbar{
@@ -11,16 +11,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #727272;
+    background: #d6d5d5;
     z-index: 9;
 }
 
 .nav{
     padding-top: 0;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     padding-left: 5vw;
     display: flex;
     justify-content: space-between;
+    background: #e0e0e0;
 } 
 /*logonun yerine etki ediyor*/
 .nav{
@@ -36,10 +37,9 @@
 }
 /*icon başı */
 .nav-items{
-    padding-left: 10vw;
-    padding-right: 8vw;
-    padding-bottom: 20px;
-    height: 40px;
+
+    padding: 15px 3vw 25px 10vw;
+    height: 70px;
     width: 175px;
     display: flex;
     align-items: center;
@@ -68,23 +68,24 @@
 
 .link{
     text-transform: capitalize;
-    padding: 0 10px;
-    margin: 0 75px;
+    padding-top: 10px;
+    margin: 0 90px;
     text-decoration: none;
-    color: #422e1c;
+    color: #000;
     opacity: 0.6;
     font-weight: 500;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 125%;
+    font-size: 110%;
+    justify-content: stretch;
 }
 
 .link:hover{
     opacity: 1;
-    border-bottom: 3px solid #422e1c;
+    border-bottom: 3px solid #553b24;
 }
 
 .link :active{
-    border-bottom: 3px solid #422e1c;
+    border-bottom: 3px solid #553b24;
 }
 
 .selected{
@@ -183,10 +184,12 @@
     padding-left: 7vw;
     padding-right: 7vw;
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
+    background-color: #e0e0e0;
 }
+
 
 .product-container::-webkit-scrollbar{
     display: none;
@@ -267,4 +270,31 @@
 }
 
 /* ürün container sonu */
+
+footer{
+    position: relative;
+    width: 100%;
+    padding: 10px 5vw;
+    padding-bottom: 7px;
+    background: #505050;
+    z-index: 9;
+}
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content.logo{
+    height: 15px;
+}
+
+.info{
+    color: rgba(255, 255, 255, 0.75);
+    padding-left: 35vw;
+    padding-right: 0px;
+    margin: 15px 0;
+    text-transform: none;
+}
 
