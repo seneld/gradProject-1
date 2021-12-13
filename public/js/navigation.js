@@ -31,6 +31,8 @@ const createNav = () => {
 
 createNav();
 
+
+
 const userImageButton = document.querySelector('#user-img');
 const userPopup = document.querySelector('.login-logout-popup');
 const popuptext = document.querySelector('.account-info');
@@ -43,9 +45,16 @@ const faqBtn = document.querySelector('#FAQ');
 const newSeasonBtn = document.querySelector('#newSeason');
 const bestSellerBtn = document.querySelector('#bestSeller');
 
+
+// const newSeasonBtn = document.querySelector('#newSeason');
+// const bestSellerBtn = document.querySelector('#bestSeller');
+
+
+
 userImageButton.addEventListener('click', ()=>{
     userPopup.classList.toggle('hide');
 })
+
 
 window.onload = () =>{
     let user = JSON.parse(sessionStorage.user || null);
@@ -95,7 +104,7 @@ window.onload = () =>{
     buy-btn.addEventListener('click', () =>{
         location.href = '/login';
     })
-
+    
     newSeasonBtn.addEventListener('click', () =>{
         location.href = '/newSeason.html';
     })
@@ -103,7 +112,6 @@ window.onload = () =>{
     bestSellerBtn.addEventListener('click', () =>{
         location.href = '/bestSeller.html';
     })
-    
 }
 
 const createFooter = () => {
