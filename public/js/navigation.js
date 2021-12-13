@@ -46,10 +46,6 @@ const newSeasonBtn = document.querySelector('#newSeason');
 const bestSellerBtn = document.querySelector('#bestSeller');
 
 
-// const newSeasonBtn = document.querySelector('#newSeason');
-// const bestSellerBtn = document.querySelector('#bestSeller');
-
-
 
 userImageButton.addEventListener('click', ()=>{
     userPopup.classList.toggle('hide');
@@ -97,13 +93,6 @@ window.onload = () =>{
         location.href = '/FAQ.html';
     })
 
-    card-btn.addEventListener('click', () =>{
-        location.href = '/product.html';
-    })
-
-    buy-btn.addEventListener('click', () =>{
-        location.href = '/login';
-    })
     
     newSeasonBtn.addEventListener('click', () =>{
         location.href = '/newSeason.html';
@@ -112,6 +101,11 @@ window.onload = () =>{
     bestSellerBtn.addEventListener('click', () =>{
         location.href = '/bestSeller.html';
     })
+
+    buy-btn.addEventListener('click', () =>{
+        location.href = '/login';
+    })
+
 }
 
 const createFooter = () => {
