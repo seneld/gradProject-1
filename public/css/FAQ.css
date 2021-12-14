@@ -52,7 +52,7 @@ section{
 }
 
 .accordion-link .ion-md-remove{
-    display: none;
+    display:none;
 }
 
 .answer{
@@ -94,5 +94,5 @@ section{
 .neck-size{
     padding-left: 22vw;
     padding-top: 0;
-    padding-bottom: 1vw;
+    padding-bottom: 9vw;
 }

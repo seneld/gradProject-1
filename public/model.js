@@ -35,6 +35,7 @@ let zPosition = 0;
 const loader = new THREE.GLTFLoader();
 
 loader.load('./dog/scene.gltf', process);
+loader.load('./collar/scene.gltf', process);
 
 let model = new THREE.Object3D();
 

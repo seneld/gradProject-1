@@ -15,6 +15,7 @@
     z-index: 9;
 }
 
+
 .nav{
     padding-top: 0;
     padding-bottom: 25px;
@@ -25,7 +26,7 @@
 } 
 /*logonun yerine etki ediyor*/
 .nav{
-    padding-top: 20px;
+    padding-top:25px;
     padding-left: 43vw;
     align-items: center;
     display: flex;
@@ -38,7 +39,7 @@
 /*icon başı */
 .nav-items{
 
-    padding: 15px 3vw 25px 10vw;
+    padding: 0 3vw 53px 10vw;
     height: 70px;
     width: 175px;
     display: flex;
@@ -62,14 +63,15 @@
 .links-container{
     width: 100%;
     display: flex;
+    padding-top: 42px;
     justify-content: center;
     list-style: none;
 }
 
 .link{
     text-transform: capitalize;
-    padding-top: 10px;
-    margin: 0 90px;
+    padding-top: 0 10px;
+    margin: 0 75px;
     text-decoration: none;
     color: #000;
     opacity: 0.6;
@@ -179,11 +181,9 @@
 }
 
 .product-container{
-    padding-top: 4vw;
-    padding-bottom: 0;
-    padding-left: 7vw;
-    padding-right: 7vw;
+    padding: 4vw 4vw 4vw 4vw;
     display: flex;
+    flex-wrap: wrap;
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
@@ -199,11 +199,11 @@
     flex: 0 0 auto;
     width: 450px;
     height: 700px;
-    margin-right: 7vw;
+    margin: 3.2vw;
 }
 
 .product-image{
-    position: relative;
+    position:sticky;
     width: 450px;
     height: 530px;
     overflow: hidden;

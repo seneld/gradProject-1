@@ -26,6 +26,7 @@ const createNav = () => {
             </div>    
 
         </ul>
+        
     `;
 } 
 
