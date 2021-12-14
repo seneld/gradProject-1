@@ -83,15 +83,15 @@
 
 .link:hover{
     opacity: 1;
-    border-bottom: 3px solid #553b24;
+    border-bottom: 3px solid #f09000;
 }
 
 .link :active{
-    border-bottom: 3px solid #553b24;
+    border-bottom: 3px solid #f09000;
 }
 
 .selected{
-    border-bottom: 3px solid #422e1c;
+    border-bottom: 3px solid #f09000;
     opacity: 1;
 }
 
@@ -187,7 +187,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
-    background-color: #e0e0e0;
+    background-color: #ececec;
 }
 
 

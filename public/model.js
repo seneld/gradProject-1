@@ -1,5 +1,6 @@
 'use strict'
 
+
 const scene = new THREE.Scene();
 
 
@@ -34,8 +35,9 @@ let zPosition = 0;
 
 const loader = new THREE.GLTFLoader();
 
-loader.load('./dog/scene.gltf', process);
-loader.load('./collar/scene.gltf', process);
+ loader.load('./dog/scene.gltf', process);
+//  loader.load('gs://ecom-website-d5971.appspot.com/img/dog/scene.gltf', process);
+
 
 let model = new THREE.Object3D();
 

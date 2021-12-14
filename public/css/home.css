@@ -96,11 +96,20 @@
 
 .link:hover{
     opacity: 1;
-    border-bottom: 3px solid #553b24;
+    border-bottom: 3px solid #f09000
 }
 
 .link :active{
-    border-bottom: 3px solid #553b24;
+    border-bottom: 3px solid #f09000
+}
+
+
+.navbar .link-item.active .link,
+.navbar .link-item .link:active,
+.navbar .link-item .link:focus,
+.navbar .link-item:hover .link {
+    color: #553b24;
+    
 }
 
 /**/
