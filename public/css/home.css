@@ -288,3 +288,8 @@ footer{
     margin: 15px 0;
     text-transform: none;
 }
+
+.info mark.orange{
+    color: #f09000;
+    background-color: #505050;
+}

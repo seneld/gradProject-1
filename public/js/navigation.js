@@ -117,10 +117,13 @@ const createFooter = () => {
         <footer>
         <div class="footer-content">
             <img src="img/logo_1.png" class="logo" alt="">
-            <p class="info">About us: This website was built by Ceren Gülsem and Şenel Develioglu within the scope of MCBU Computer Engineering department Graduation Project-1.</p>
-        </div>
+            
+                <p class="info"><mark class="orange">About us:</mark> This website was built by Ceren Gülsem and Şenel Develioglu within the scope of MCBU Computer Engineering department Graduation Project-1.</p> 
+
+            </div>
     </footer>
     `;
 } 
 
 createFooter();
+
