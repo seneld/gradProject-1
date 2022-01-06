@@ -1,3 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Deneme</title>
+</head>
+
+
+<body></body>
+
+
+<script type = "module"> 
+import * as THREE from '../three.js-dev/build/three.module.js';
+import { OrbitControls } from '../three.js-dev/examples/jsm/controls/OrbitControls.js'; 
+import { GLTFLoader } from '../three.js-dev/examples/jsm/loaders/GLTFLoader.js'; 
+import { RGBELoader } from '../three.js-dev/examples/jsm/loaders/RGBELoader.js'; 
+import { RoughnessMipmapper } from '../three.js-dev/examples/jsm/utils/RoughnessMipmapper.js'; 
+</script>
+
+<script src = "./three.js-dev/build/three.js"></script>
+<script src = "./three.js-dev/examples/js/controls/OrbitControls.js"></script>
+<script src = "./three.js-dev/examples/js/loaders/GLTFLoader.js"></script>
+<!-- <script src = "model.js"></script> -->
+
+<script>
+
 'use strict'
 
 
@@ -76,3 +104,9 @@ function process(gltf){
      model.add(gltf.scene);
     scene.add(model);
 }
+</script>
+
+</html>
+
+
+
