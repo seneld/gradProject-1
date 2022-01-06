@@ -37,8 +37,16 @@ app.get('/clothes', (req, res) => {
     res.sendFile(path.join(staticPath, "clothes.html"));
 })
 
-app.get('/clothes', (req, res) => {
-    res.sendFile(path.join(staticPath, "clothes.html"));
+app.get('/toys', (req, res) => {
+    res.sendFile(path.join(staticPath, "toys.html"));
+})
+
+app.get('/feeding', (req, res) => {
+    res.sendFile(path.join(staticPath, "feeding.html"));
+})
+
+app.get('/beds', (req, res) => {
+    res.sendFile(path.join(staticPath, "beds.html"));
 })
 
 app.get('/product', (req, res) => {

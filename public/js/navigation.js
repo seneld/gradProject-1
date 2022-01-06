@@ -6,8 +6,8 @@ const createNav = () => {
         <ul class="links-container">
             <li class="link-item"><a href="#" class="link" id="clothes">Clothes & Collars</a></li>
             <li class="link-item"><a href="#" class="link" id="toys">Toys</a></li>
-            <li class="link-item"><a href="#" class="link">Feeding Supplies</a></li>
-            <li class="link-item"><a href="#" class="link">Beds, Mats & Houses</a></li>
+            <li class="link-item"><a href="#" class="link" id="feeding">Feeding Supplies</a></li>
+            <li class="link-item"><a href="#" class="link" id="beds">Beds, Mats & Houses</a></li>
             <li class="link-item"><a href="#" class="link" id="FAQ">FAQ</a></li>
 
             <div class="nav-items">
@@ -42,6 +42,8 @@ const logoBtn = document.querySelector('.logo');
 const homeImageButton = document.querySelector('#home-img');
 const clothesAndCollarsBtn = document.querySelector('#clothes');
 const toysBtn = document.querySelector('#toys');
+const feedingBtn = document.querySelector('#feeding');
+const bedsBtn = document.querySelector('#beds');
 const faqBtn = document.querySelector('#FAQ');
 const newSeasonBtn = document.querySelector('#newSeason');
 const bestSellerBtn = document.querySelector('#bestSeller');
@@ -90,10 +92,17 @@ window.onload = () =>{
         location.href = '/toys.html';
     })
 
+    feedingBtn.addEventListener('click', () =>{
+        location.href = '/feeding.html';
+    })
+
+    bedsBtn.addEventListener('click', () =>{
+        location.href = '/beds.html';
+    })
+
     faqBtn.addEventListener('click', () =>{
         location.href = '/FAQ.html';
     })
-
     
     newSeasonBtn.addEventListener('click', () =>{
         location.href = '/newSeason.html';

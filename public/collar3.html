@@ -22,7 +22,7 @@ import { RoughnessMipmapper } from '../three.js-dev/examples/jsm/utils/Roughness
 <script src = "./three.js-dev/build/three.js"></script>
 <script src = "./three.js-dev/examples/js/controls/OrbitControls.js"></script>
 <script src = "./three.js-dev/examples/js/loaders/GLTFLoader.js"></script>
-<!-- <script src = "model.js"></script> -->
+
 
 <script>
 
@@ -63,8 +63,7 @@ let zPosition = 0;
 
 const loader = new THREE.GLTFLoader();
 
- loader.load('./dog/scene.gltf', process);
-//  loader.load('gs://ecom-website-d5971.appspot.com/img/dog/scene.gltf', process);
+loader.load('./products/collars/collar3/scene.gltf', process);
 
 
 let model = new THREE.Object3D();
