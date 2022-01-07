@@ -115,6 +115,7 @@ window.onload = () =>{
     buy-btn.addEventListener('click', () =>{
         location.href = '/login';
     })
+    
 
 }
 
