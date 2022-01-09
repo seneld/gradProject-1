@@ -1,3 +1,5 @@
+/*navigation bar of the all pages*/
+
 const createNav = () => {
     let nav = document.querySelector('.navbar');
 
@@ -32,7 +34,7 @@ const createNav = () => {
 
 createNav();
 
-
+/*choosing clickable items using querySelector with id and classes*/
 
 const userImageButton = document.querySelector('#user-img');
 const userPopup = document.querySelector('.login-logout-popup');
@@ -48,19 +50,17 @@ const faqBtn = document.querySelector('#FAQ');
 const newSeasonBtn = document.querySelector('#newSeason');
 const bestSellerBtn = document.querySelector('#bestSeller');
 
-
+/*closing user popup*/
 
 userImageButton.addEventListener('click', () => {
     userPopup.classList.toggle('hide');
 })
 
-
 window.onload = () => {
     let user = JSON.parse(sessionStorage.user || null);
 
-
     if (user != null) {
-        // means user is logged in
+        //user is logged in
         popuptext.innerHTML = `Log in as , ${user.username}`;
         actionBtn.innerHTML = 'log out';
         actionBtn.addEventListener('click', () => {
@@ -68,13 +68,15 @@ window.onload = () => {
             location.reload();
         })
     } else {
-        // user is logged out
+        //user is logged out
         popuptext.innerHTML = 'log in to place order';
         actionBtn.innerHTML = 'log in';
         actionBtn.addEventListener('click', () => {
             location.href = '/login';
         })
     }
+
+    /*when clicking the button, changing page to relevant link*/
 
     homeImageButton.addEventListener('click', () => {
         location.href = '/';
@@ -118,6 +120,8 @@ window.onload = () => {
 
 
 }
+
+/*footer hmtl codes for every page which are use footer*/
 
 const createFooter = () => {
     let footer = document.querySelector('footer');

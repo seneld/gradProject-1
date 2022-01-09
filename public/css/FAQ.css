@@ -12,11 +12,17 @@ section{
     align-items: center;
     justify-content: center;
 }
+
+/*information text*/
+
 .intro{
     padding-top: 7vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #383838;
 }
+
+/*faq questions accordions*/
+
 .container{
     width: 100%;
     max-width: 80rem;
@@ -25,7 +31,6 @@ section{
 }
 
 .accordion-item{
-    /* box color */
     background-color: rgb(232, 232, 232);
     border-radius: .4rem;
     margin-bottom: 1rem;
@@ -90,6 +95,8 @@ section{
 .accordion-item:target .accordion-link .ion-md-remove{
     display: block;
 }
+
+/*neck size video part*/
 
 .neck-size{
     padding-left: 22vw;

@@ -19,7 +19,6 @@ const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const tac = document.querySelector('#terms-and-cond') || null;
 
-
 submitBtn.addEventListener('click', () => {
     if (username != null) {  //sign up page
         if (username.value.length < 3) {
@@ -56,5 +55,3 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
-
-

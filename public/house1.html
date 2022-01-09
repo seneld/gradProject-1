@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Model Deneme</title>
+    <title>3D Modelling</title>
 </head>
 
 
@@ -33,7 +33,7 @@
     const scene = new THREE.Scene();
 
 
-    // PERSPEKTİF KAMERA
+    //perspective camera 
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.01, 1000);
     camera.position.set(0, 100, 400);
 
@@ -46,9 +46,7 @@
     var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 
-    //IŞIKLAR
-
-
+    //lights
     const lightA = new THREE.AmbientLight(0xffffff, 0.1);
     scene.add(lightA);
 
@@ -89,15 +87,12 @@
     lightD12.position.set(-20, 0, 0);
     scene.add(lightD12);
 
-    // IŞIKLARIN SONU 
-
 
     let yRotation = 0;
     let xPosition = 0;
     let zPosition = 0;
 
     const loader = new THREE.GLTFLoader();
-
     loader.load('./products/beds/house1/scene.gltf', process);
 
 
@@ -138,6 +133,8 @@
         model.add(gltf.scene);
         scene.add(model);
     }
+
+    
 </script>
 
 </html>

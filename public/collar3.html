@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Model Deneme</title>
+    <title>3D Modelling</title>
 </head>
 
 
@@ -33,7 +33,7 @@
     const scene = new THREE.Scene();
 
 
-    // PERSPEKTİF KAMERA
+    //perpective camera
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.01, 1000);
     camera.position.set(0, 20, 35);
 
@@ -46,10 +46,11 @@
     var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 
-    //IŞIKLAR
+    //lights
     const lightA = new THREE.AmbientLight(0xffffff, 0.1);
     scene.add(lightA);
 
+    //in this model we used 12 different directional light with different positions and different hardness
     const lightD = new THREE.DirectionalLight(0xffffff, 0.5);
     lightD.position.set(0, 0, 30);
     scene.add(lightD);
@@ -88,15 +89,11 @@
     scene.add(lightD12);
 
 
-    // IŞIKLARIN SONU 
-
-
     let yRotation = 0;
     let xPosition = 0;
     let zPosition = 0;
 
     const loader = new THREE.GLTFLoader();
-
     loader.load('./products/collars/collar3/scene.gltf', process);
 
 
@@ -137,6 +134,8 @@
         model.add(gltf.scene);
         scene.add(model);
     }
+
+    
 </script>
 
 </html>

@@ -27,9 +27,7 @@ const compareToken = (token, key) => {
 }
 
 
-//common functions
-
-//send data function
+//send data to firebase function
 
 const sendData = (path, data) => {
     fetch(path, {

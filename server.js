@@ -4,7 +4,6 @@ const bcrypt = require('bcrypt');
 const path = require('path');
 
 
-
 var serviceAccount = require("./ecom-website-d5971-firebase-adminsdk-9gciw-9da3cc9705.json");
 
 admin.initializeApp({
@@ -21,6 +20,7 @@ const app = express();
 app.use(express.static(staticPath));
 app.use(express.json());
 
+//page directions
 app.get("/", (req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
 })
