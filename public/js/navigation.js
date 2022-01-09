@@ -28,7 +28,7 @@ const createNav = () => {
         </ul>
         
     `;
-} 
+}
 
 createNav();
 
@@ -50,72 +50,72 @@ const bestSellerBtn = document.querySelector('#bestSeller');
 
 
 
-userImageButton.addEventListener('click', ()=>{
+userImageButton.addEventListener('click', () => {
     userPopup.classList.toggle('hide');
 })
 
 
-window.onload = () =>{
+window.onload = () => {
     let user = JSON.parse(sessionStorage.user || null);
-    
-    
-    if(user != null){
+
+
+    if (user != null) {
         // means user is logged in
         popuptext.innerHTML = `Log in as , ${user.username}`;
         actionBtn.innerHTML = 'log out';
-        actionBtn.addEventListener('click', () =>{
+        actionBtn.addEventListener('click', () => {
             sessionStorage.clear();
             location.reload();
         })
-    } else{
+    } else {
         // user is logged out
         popuptext.innerHTML = 'log in to place order';
         actionBtn.innerHTML = 'log in';
-        actionBtn.addEventListener('click', ()=>{
+        actionBtn.addEventListener('click', () => {
             location.href = '/login';
         })
     }
 
-    homeImageButton.addEventListener('click', () =>{
+    homeImageButton.addEventListener('click', () => {
         location.href = '/';
     })
 
-    logoBtn.addEventListener('click', () =>{
+    logoBtn.addEventListener('click', () => {
         location.href = '/';
     })
 
-    clothesAndCollarsBtn.addEventListener('click', () =>{
+    clothesAndCollarsBtn.addEventListener('click', () => {
         location.href = '/clothes.html';
     })
 
-    toysBtn.addEventListener('click', () =>{
+    toysBtn.addEventListener('click', () => {
         location.href = '/toys.html';
     })
 
-    feedingBtn.addEventListener('click', () =>{
+    feedingBtn.addEventListener('click', () => {
         location.href = '/feeding.html';
     })
 
-    bedsBtn.addEventListener('click', () =>{
+    bedsBtn.addEventListener('click', () => {
         location.href = '/beds.html';
     })
 
-    faqBtn.addEventListener('click', () =>{
+    faqBtn.addEventListener('click', () => {
         location.href = '/FAQ.html';
     })
-    
-    newSeasonBtn.addEventListener('click', () =>{
+
+    newSeasonBtn.addEventListener('click', () => {
         location.href = '/newSeason.html';
     })
 
-    bestSellerBtn.addEventListener('click', () =>{
+    bestSellerBtn.addEventListener('click', () => {
         location.href = '/bestSeller.html';
     })
 
-    buy-btn.addEventListener('click', () =>{
+    buy - btn.addEventListener('click', () => {
         location.href = '/login';
     })
-    
+
 
 }
 
@@ -133,7 +133,7 @@ const createFooter = () => {
             </div>
     </footer>
     `;
-} 
+}
 
 createFooter();
 

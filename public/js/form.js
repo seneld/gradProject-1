@@ -1,12 +1,12 @@
 window.onload = () => {
-    if(sessionStorage.user){
+    if (sessionStorage.user) {
         user = JSON.parse(sessionStorage.user);
-        if(compareToken(user.authToken, user.email)){
+        if (compareToken(user.authToken, user.email)) {
             location.replace('/');
         }
     }
 
-    logoBtn.addEventListener('click', () =>{
+    logoBtn.addEventListener('click', () => {
         location.href = '/';
     })
 }
@@ -21,19 +21,19 @@ const tac = document.querySelector('#terms-and-cond') || null;
 
 
 submitBtn.addEventListener('click', () => {
-    if(username != null){  //sign up page
-        if(username.value.length < 3){
+    if (username != null) {  //sign up page
+        if (username.value.length < 3) {
             alert('username must be 3 letters long');
-        } else if(!email.value.length){
+        } else if (!email.value.length) {
             alert('enter your email');
-        } else if(password.value.length < 8){
+        } else if (password.value.length < 8) {
             alert('password should be 8 letters long');
-        }else if(!tac.checked){
-                alert('you must agree to our terms and conditions');
-        } else{
+        } else if (!tac.checked) {
+            alert('you must agree to our terms and conditions');
+        } else {
             //submit form
             loader.style.display = 'block';
-        
+
             sendData('/signup', {
                 username: username.value,
                 email: email.value,
@@ -42,13 +42,13 @@ submitBtn.addEventListener('click', () => {
                 seller: false
             })
         }
-    }else{
+    } else {
         //login page
-        if(!email.value.length || !password.value.length){
+        if (!email.value.length || !password.value.length) {
             alert('Fill All The Inputs');
-        } else{
+        } else {
             loader.style.display = 'block';
-        
+
             sendData('/login', {
                 email: email.value,
                 password: password.value,
