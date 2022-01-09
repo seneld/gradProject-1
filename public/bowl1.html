@@ -45,13 +45,30 @@ var controls = new THREE.OrbitControls(camera, renderer.domElement);
 
 
 //IŞIKLAR
-
-const lightA = new THREE.AmbientLight(0x404040);
+const lightA = new THREE.AmbientLight(0xffffff,0.1);
 scene.add(lightA);
 
-const lightP = new THREE.PointLight(0xddff00, 1);
-lightP.position.set(-1, 3, 5);
-scene.add(lightP);
+// const lightP = new THREE.PointLight(0xffffff, 1);
+// lightP.position.set(-1, 3, 5);
+// scene.add(lightP);
+const lightD = new THREE.DirectionalLight(0xffffff, 0.5);
+lightD.position.set(0, 0, 30);
+scene.add(lightD);
+const lightD2 = new THREE.DirectionalLight(0xffffff, 0.5);
+lightD2.position.set(0, 0, -30);
+scene.add(lightD2);
+const lightD3 = new THREE.DirectionalLight(0xffffff, 0.5);
+lightD3.position.set(0, 30, 0);
+scene.add(lightD3);
+const lightD4 = new THREE.DirectionalLight(0xffffff, 0.5);
+lightD4.position.set(0, -30, 0);
+scene.add(lightD4);
+const lightD5 = new THREE.DirectionalLight(0xffffff, 0.5);
+lightD5.position.set(30, 0, 0);
+scene.add(lightD5);
+const lightD6 = new THREE.DirectionalLight(0xffffff, 0.5);
+lightD6.position.set(-30, 0, 0);
+scene.add(lightD6);
 
 // IŞIKLARIN SONU 
 
@@ -98,11 +115,14 @@ function process(gltf){
     center = box.getCenter( new THREE.Vector3());
     size = box.getSize( new THREE.Vector3());
 
-    gltf.scene.position.set(-center.x, size.y / 2 - center.y, -center.z);
+    gltf.scene.position.set(-center.x, 2*size.y / 10 - center.y, -center.z*10);
 
      model.add(gltf.scene);
     scene.add(model);
+    console.log(model.position);
 }
+
+
 </script>
 
 </html>

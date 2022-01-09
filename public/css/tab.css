@@ -200,6 +200,7 @@
     width: 450px;
     height: 700px;
     margin: 3.2vw;
+ 
 }
 
 .product-image{
@@ -213,6 +214,7 @@
     width: 450px;
     height: 530px;
     /* object-fit: cover; */
+
 }
 
 .card-btn{
