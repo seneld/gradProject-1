@@ -6,7 +6,7 @@ const createNav = () => {
         <ul class="links-container">
             <li class="link-item"><a href="#" class="link" id="clothes">Clothes & Collars</a></li>
             <li class="link-item"><a href="#" class="link" id="toys">Toys</a></li>
-            <li class="link-item"><a href="#" class="link" id="feeding">Feeding Supplies</a></li>
+            <li class="link-item"><a href="#" class="link" id="feeding">Bowls</a></li>
             <li class="link-item"><a href="#" class="link" id="beds">Beds, Mats & Houses</a></li>
             <li class="link-item"><a href="#" class="link" id="FAQ">FAQ</a></li>
 
