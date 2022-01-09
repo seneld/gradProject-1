@@ -12,3 +12,8 @@ DOOG is basically a boutique ecommerce website selling dog clothes and accessori
 $ npm start
 ```
 Finally visit ```localhost:5500``` on your browser.
+
+### Landing Page
+![Landing Page](https://user-images.githubusercontent.com/73132056/148703398-8b1de26c-f0d9-4408-90f6-b64a8f89a3d7.png)
+### Model Display
+![Model Display](https://user-images.githubusercontent.com/73132056/148703440-86e379f0-e6b2-4625-a890-fcec8003eeb0.png)
